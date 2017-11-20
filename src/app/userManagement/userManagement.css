@@ -1,0 +1,16 @@
+@import '../../styles.css';
+
+.login-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .login-full-width {
+    width: 100%;
+  }
+
+  .card-header {
+      max-width: 500px;
+      text-align: center;
+  }

@@ -1,0 +1,1 @@
+export const SERVER_URL = 'http://oauthtestproject-testproject-stef.7e14.starter-us-west-2.openshiftapps.com/';

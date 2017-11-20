@@ -1,0 +1,37 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+
+    <mat-card class="card-header" fxLayoutAlign="center start" fxFlex>
+        <mat-card-header fxLayoutAlign="center start">
+            <mat-card-title>Register</mat-card-title>
+            <mat-card-subtitle>Provide your details to register into the application</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="login-form" [formGroup]="form">
+                <p>
+                    <mat-form-field class="login-full-width">
+                        <input matInput formControlName="firstName" placeholder="First Name" />
+                    </mat-form-field>
+                    <mat-form-field class="login-full-width">
+                        <input matInput formControlName="lastName" placeholder="Last Name" />
+                    </mat-form-field>
+                    <mat-form-field class="login-full-width">
+                        <input matInput formControlName="username" placeholder="Username" />
+                    </mat-form-field>
+                    <mat-form-field class="login-full-width">
+                        <input matInput formControlName="email" placeholder="Email" />
+                    </mat-form-field>
+                    <mat-form-field class="login-full-width">
+                        <input type="password" formControlName="password" matInput placeholder="Password" />
+                    </mat-form-field>
+                    <mat-form-field class="login-full-width">
+                        <input type="password" formControlName="repeatPassword" matInput placeholder="Repeat Password" />
+                    </mat-form-field>
+                </p>
+            </form>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="register()">Register</button>
+            <button mat-raised-button color="accent" (click)="login()">Login</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

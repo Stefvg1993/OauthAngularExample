@@ -1,0 +1,9 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+    <mat-card class="card-header" *ngFor="let user of users">
+        <mat-card-content>
+            <p>{{user.firstName}}</p>
+            <p>{{user.lastName}}</p>
+            <p>{{user.username}}</p>
+        </mat-card-content>
+    </mat-card>
+</div>

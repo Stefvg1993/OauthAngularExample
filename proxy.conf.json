@@ -1,0 +1,11 @@
+{
+  "/api/*": {
+    "target": "http://oauthtestproject-testproject-stef.7e14.starter-us-west-2.openshiftapps.com/",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "info",
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}

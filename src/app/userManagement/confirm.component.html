@@ -1,0 +1,19 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+
+    <mat-card class="card-header" fxLayoutAlign="center start" fxFlex>
+        <mat-card-header fxLayoutAlign="center start">
+            <mat-card-title>Confirming user</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div *ngIf="!error && confirmed">
+                CONFIRMED
+            </div>
+            <div *ngIf="error">
+                ERROR
+            </div>
+            <div *ngIf="!error && !confirmed">
+                CONFIRMING
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>

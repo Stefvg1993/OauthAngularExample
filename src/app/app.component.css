@@ -1,0 +1,15 @@
+@import '../styles.css';
+
+.content {
+    padding: 2em;
+}
+
+.mat-elevation-z4 {
+    position: relative;
+    z-index: 2;
+}
+
+.app-bar {
+    padding-left: 1em;
+    padding-right: 1em;
+}
