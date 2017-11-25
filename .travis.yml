@@ -18,6 +18,5 @@ before_install:
   - sh -e /etc/init.d/xvfb start
 
 script:
-- webpack
 - npm install
 - ng build
