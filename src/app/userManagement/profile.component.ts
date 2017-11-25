@@ -40,7 +40,9 @@ export class ProfileComponent {
     register() {
         this.validateAllFormFields(this.form);
         if (this.form.valid) {
-            this.userService.updateUser(this.form.value);
+            const formData = this.form.value;
+            formData['id'] = this.user.id;
+            this.userService.updateUser(formData);
         }
     }
 

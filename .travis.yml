@@ -17,8 +17,7 @@ before_install:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
 
-before_script:
+script:
+- webpack
 - npm install
 - ng build
-
-script: karma start config/karma.conf.js --single-run
